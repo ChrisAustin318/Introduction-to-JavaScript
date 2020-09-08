@@ -1,25 +1,28 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
-
-
-
+let votingAge = 18
+    if (age > votingAge){
+    console.log(true);
+    }
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
-
-
-
+    if (true){
+        let myVariable = 'True';
+    } else {
+        let myVariable = 'False';
+    }
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
+let x = Number("1999")
 
 
 //Task d: Write a function to multiply a*b 
 
-
+function multiply(a, b){
+    console.log(a * b);
+    return a * b;
+}
 
 
 
@@ -27,8 +30,10 @@
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
-
+function dogAge(age){
+    let dogYears = 7*age;
+    console.log(dogYears)
+}
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -60,20 +65,26 @@
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+
   
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
+function miles(KM){
+    let miles = 0.62137*KM;
+    console.log(miles)
+}
+ 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function CM(feet){
+    let CM = feet/0.032808;
+    console.log(CM)
+}
 
 
 
@@ -95,8 +106,19 @@
 //60s should be D 
 //and anything below 60 should be F
   
-
-  
+function grade(){
+    if(grade >= 90){
+        return ("A");
+    }else if(grade >= 80){
+        return ("B");
+    }else if(grade >= 70){
+        return ("C");
+    }else if(grade >= 60){
+        return ("D");
+    }else {
+        return ("F")}
+}
+   
   
 
 /************************************************************** Stretch **************************************************************/
